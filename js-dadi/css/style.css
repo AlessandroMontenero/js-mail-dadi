@@ -1,0 +1,112 @@
+.container {
+    padding-top: 4rem;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around ;
+}
+
+button {
+    margin-left: 50%;
+    transform: translate(-50% , 0);
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.dice {  
+    padding: 4px;  
+    background-color: tomato;  
+    width: 104px;  
+    height: 104px;  
+    border-radius: 10%;
+    transform: scale(1);
+    transition: transform 0.5s linear;
+}
+
+.dot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-face{
+    display: flex;
+    justify-content : space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.third-face{
+    display: flex;
+    justify-content : space-between;
+}
+
+.third-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+.third-face .dot:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.fourth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alignCenter {
+    display: flex;
+    margin-top: 50%;
+    transform: translate(0, -25%);
+}
+
+.sixth-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sixth-face .column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.winner {
+    transform: scale(1.2);
+}
+
+.result {
+    text-align: center;
+}
