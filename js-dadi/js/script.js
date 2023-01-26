@@ -20,7 +20,6 @@ document.getElementById("playGame").onclick = function playGame () {
     
     /* controllo chi ha vinto */
     if (userNumber > cpuNumber) {
-        console.log("l'utente ha vinto")
         userDice.classList.add("winner")
         document.getElementById("result").innerHTML = "L'utente ha vinto"
     }
@@ -31,7 +30,6 @@ document.getElementById("playGame").onclick = function playGame () {
     }
     
     else {
-        console.log("pareggio")
         document.getElementById("result").innerHTML = "Pareggio"
     }
     
