@@ -9,7 +9,6 @@ const emails = ["alemonte99@icloud.com", "pincopallo@gmail.com"]
 document.getElementById("addMail").onclick = function addMail () {
  arrayLenght = emails.length
  emails[arrayLenght] = (document.getElementById("email").value)
- console.log(emails)
 }
 
 /* controllo che la mail sia presente nell'array */
@@ -23,7 +22,12 @@ document.getElementById("login").onclick = function tryLogin() {
             x = true
         }
         else {
-            console.log(x)
+            if (x == true) {
+                x = true
+            }
+            else {
+                x = false
+            }
         }
     }
 
